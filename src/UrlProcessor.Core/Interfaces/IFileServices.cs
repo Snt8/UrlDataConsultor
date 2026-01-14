@@ -1,10 +1,10 @@
 using UrlProcessor.Core.Model;
 
-interface IFileServices
+interface IFileService
 {
-    Task<List<string>> ReadWebUrl(string directions);
+    Task<List<string>> ReadWebUrl(string filePath);
     //Method for read the file, and get the URL
 
-    Task WriteDataAsync(List<WebData> webInfo);
+    Task WriteDataAsync(List<WebData> outputPath);
     //Method for write the data of the server given for the API
 }
