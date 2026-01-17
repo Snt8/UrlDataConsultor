@@ -12,6 +12,7 @@ public class ApiService : IApiService
 
     public ApiService(HttpClient obj_httpClient)
     {
+        //Define in the constructor the HTTP Client
         _httpClient = obj_httpClient;
     }
 
@@ -20,11 +21,13 @@ public class ApiService : IApiService
         Stopwatch stopwatch = Stopwatch.StartNew();
         try
         {
+            //Trying the HTTP petition
             var response = await _httpClient.GetAsync(url);
             stopwatch.Stop();
 
             return new WebData()
             {
+                //Creation of the object WebData
                 Url = url,
                 Exito = response.IsSuccessStatusCode,
                 TimeSpan = stopwatch.Elapsed,
@@ -35,9 +38,11 @@ public class ApiService : IApiService
 
         catch (Exception ex)
         {
+            //If the HTTP petition fails
             stopwatch.Stop();
             return new WebData()
             {
+                //Creation of the WebData object with the information of the error
                 Url = url,
                 Exito = false,
                 TimeSpan = stopwatch.Elapsed,
