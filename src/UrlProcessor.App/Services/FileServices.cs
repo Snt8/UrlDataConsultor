@@ -8,7 +8,7 @@ using System.Text.Json.Nodes;
 using System.Text.Json;
 using System.Runtime.CompilerServices;
 
-public class FileServices : IFileService
+public class FileService : IFileService
 {
     public async Task<List<string>> ReadWebUrl(string filePath)
     {
