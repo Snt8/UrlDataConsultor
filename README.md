@@ -6,7 +6,7 @@ I developed this tool for users who need to verify their website's availability 
 
 ---
 
-### Key Features
+### 🔑 Key Features 🔑
 
 * **Asynchronous Execution**: Built with a fully asynchronous architecture, leveraging .NET `async` and `await` keywords to ensure non-blocking I/O operations.
 
@@ -14,7 +14,7 @@ I developed this tool for users who need to verify their website's availability 
 
 * **Detailed Reporting**: Generates a comprehensive JSON report containing status codes, response times, and error details for every consult.
 
-### Tech Stack
+### 🔧​ Tech Stack 🔧​ 
 * **Runtime**: .NET 10
 * **Language**: C# 14
 * **Libraries**: 
@@ -23,7 +23,7 @@ I developed this tool for users who need to verify their website's availability 
 
 ---
 
-### How To Run
+### 🚀​ How To Run 🚀​
 
 #### **Prerequisites**
 * Ensure you have the **.NET 10 SDK** installed (verify with `dotnet --version`).
