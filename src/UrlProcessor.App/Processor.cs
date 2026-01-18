@@ -1,5 +1,4 @@
 namespace UrlProcessor.App;
-using UrlProcessor.App.Services;
 using UrlProcessor.Core.Model;
 using UrlProcessor.Core.Interface;
 
